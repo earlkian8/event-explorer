@@ -49,7 +49,7 @@ export function EventDetail({ event, isSaved, onClose, onToggleSave }) {
 
             <View className="gap-3 mb-6">
               <View className="flex-row items-start gap-3">
-                <Calendar size={20} color="#9333ea" />
+                <Calendar size={20} color="#0ea5e9" />
                 <View className="flex-1">
                   <Text className="font-medium text-gray-900">
                     {new Date(event.date).toLocaleDateString('en-US', {
@@ -63,20 +63,20 @@ export function EventDetail({ event, isSaved, onClose, onToggleSave }) {
               </View>
 
               <View className="flex-row items-start gap-3">
-                <Clock size={20} color="#9333ea" />
+                <Clock size={20} color="#0ea5e9" />
                 <Text className="font-medium text-gray-900">{event.time}</Text>
               </View>
 
               <View className="flex-row items-start gap-3">
-                <MapPin size={20} color="#9333ea" />
+                <MapPin size={20} color="#0ea5e9" />
                 <Text className="font-medium text-gray-900">{event.location}</Text>
               </View>
             </View>
 
             {event.price && (
-              <View className="bg-purple-50 rounded-xl p-4 mb-6">
+              <View className="bg-sky-50 rounded-xl p-4 mb-6">
                 <Text className="text-sm text-gray-600 mb-1">Price</Text>
-                <Text className="text-xl font-bold text-purple-600">{event.price}</Text>
+                <Text className="text-xl font-bold text-sky-600">{event.price}</Text>
               </View>
             )}
 
@@ -96,7 +96,7 @@ export function EventDetail({ event, isSaved, onClose, onToggleSave }) {
             <Pressable
               onPress={onToggleSave}
               className={`w-full py-4 rounded-xl font-semibold items-center justify-center flex-row gap-2 ${
-                isSaved ? 'bg-gray-100' : 'bg-purple-600'
+                isSaved ? 'bg-gray-100' : 'bg-sky-500'
               }`}
             >
               <Bookmark size={20} color={isSaved ? '#374151' : '#ffffff'} fill={isSaved ? '#374151' : '#ffffff'} />

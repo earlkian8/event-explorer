@@ -14,7 +14,7 @@ export function FilterChips({ activeFilter, onFilterChange }) {
             onPress={() => onFilterChange(filter)}
             className={`px-4 py-2 rounded-full ${
               activeFilter === filter
-                ? 'bg-purple-600'
+                ? 'bg-sky-500'
                 : 'bg-gray-100'
             }`}
           >

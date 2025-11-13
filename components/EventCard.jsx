@@ -44,13 +44,13 @@ export function EventCard({ event, onCardClick, isSaved, showRemove, onRemove, o
             onPress={handleSavePress}
             className="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md"
           >
-            <Bookmark size={18} color={isSaved ? "#9333ea" : "#9ca3af"} fill={isSaved ? "#9333ea" : "none"} />
+            <Bookmark size={18} color={isSaved ? "#0ea5e9" : "#9ca3af"} fill={isSaved ? "#0ea5e9" : "none"} />
           </Pressable>
         )}
         {!onToggleSave && isSaved && (
           <View className="absolute top-3 left-3">
             <View className="bg-white rounded-full p-1.5 shadow-md">
-              <Bookmark size={16} color="#9333ea" fill="#9333ea" />
+              <Bookmark size={16} color="#0ea5e9" fill="#0ea5e9" />
             </View>
           </View>
         )}
@@ -88,7 +88,7 @@ export function EventCard({ event, onCardClick, isSaved, showRemove, onRemove, o
 
         {event.price && (
           <View className="mt-3 pt-3 border-t border-gray-100">
-            <Text className="text-sm font-semibold text-purple-600">{event.price}</Text>
+            <Text className="text-sm font-semibold text-sky-600">{event.price}</Text>
           </View>
         )}
 

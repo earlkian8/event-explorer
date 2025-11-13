@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Text, View } from 'react-native';
+import { Map, MapPin } from 'lucide-react-native';
 
 let MapView, Marker;
 try {
@@ -32,7 +33,7 @@ export function EventsMap({ events, onEventClick }) {
       <View className="items-center justify-center bg-white bg-opacity-90 rounded-2xl" style={{ minHeight: 300 }}>
         <View className="items-center px-4">
           <View className="w-16 h-16 bg-gray-100 rounded-full items-center justify-center mb-3">
-            <Text className="text-3xl">📍</Text>
+            <MapPin size={32} color="#9ca3af" />
           </View>
           <Text className="text-lg font-semibold text-gray-900 mb-2">No events to display</Text>
           <Text className="text-gray-500 text-sm text-center">
@@ -49,7 +50,7 @@ export function EventsMap({ events, onEventClick }) {
       <View className="items-center justify-center bg-white bg-opacity-90 rounded-2xl" style={{ minHeight: 300 }}>
         <View className="items-center px-4">
           <View className="w-16 h-16 bg-gray-100 rounded-full items-center justify-center mb-3">
-            <Text className="text-3xl">🗺️</Text>
+            <Map size={32} color="#9ca3af" />
           </View>
           <Text className="text-lg font-semibold text-gray-900 mb-2">Map View</Text>
           <Text className="text-gray-500 text-sm text-center">

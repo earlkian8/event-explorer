@@ -1,14 +1,14 @@
 import React from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
-import { Trash2 } from 'lucide-react-native';
+import { Bookmark, Trash2 } from 'lucide-react-native';
 import { EventCard } from './EventCard';
 
 export function SavedEvents({ events, onEventClick, onRemoveEvent, onRemoveAll }) {
   if (events.length === 0) {
     return (
       <View className="flex-1 items-center justify-center py-16 px-4 min-h-[60vh]">
-        <View className="w-24 h-24 bg-purple-50 rounded-full items-center justify-center mb-4">
-          <Text className="text-5xl">📌</Text>
+        <View className="w-24 h-24 bg-sky-50 rounded-full items-center justify-center mb-4">
+          <Bookmark size={48} color="#0ea5e9" fill="#0ea5e9" />
         </View>
         <Text className="text-xl font-bold text-gray-900 mb-2">No saved events yet</Text>
         <Text className="text-gray-500 text-center max-w-xs">

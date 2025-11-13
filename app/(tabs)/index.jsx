@@ -37,10 +37,10 @@ export default function EventsScreen() {
   return (
     <View className="flex-1 bg-gray-50">
       <View className="flex-1 bg-white">
-        {/* Header with Gradient */}
-        <View className="bg-purple-600 px-6 pt-8 pb-6 rounded-b-3xl">
-          <Text className="text-2xl font-bold text-white mb-1">Event Explorer</Text>
-          <Text className="text-sm text-purple-100">Discover amazing local events</Text>
+        {/* Header */}
+        <View className="bg-sky-600 px-6 pt-8 pb-6 rounded-b-3xl shadow-lg">
+          <Text className="text-2xl font-bold text-white mb-1">VibeCheck</Text>
+          <Text className="text-sm text-sky-100">Discover amazing local events</Text>
         </View>
 
         {/* Content Area */}

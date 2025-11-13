@@ -1,38 +1,23 @@
 import React from 'react';
 import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
-import { Mail, Rocket, Target, Users } from 'lucide-react-native';
+import { Bookmark, Mail, Map, Rocket, Search, Sparkles, Target, Users } from 'lucide-react-native';
 
 export function About() {
   const teamMembers = [
     {
-      name: 'Sarah Chen',
-      role: 'Product Lead',
-      contribution: 'Product vision & user research'
-    },
-    {
-      name: 'Marcus Johnson',
-      role: 'Lead Developer',
+      name: 'Earl Kian A. Bancayrin',
+      role: 'Full-Stack Developer Lead',
       contribution: 'Technical architecture & implementation'
     },
     {
-      name: 'Priya Patel',
-      role: 'UX Designer',
-      contribution: 'Interface design & user flows'
+      name: 'Jenson L. Canones',
+      role: 'Full-Stack Developer',
+      contribution: 'Frontend & backend development'
     },
     {
-      name: 'Alex Rivera',
-      role: 'Backend Engineer',
-      contribution: 'API development & data management'
-    },
-    {
-      name: 'Emma Williams',
-      role: 'QA Lead',
-      contribution: 'Testing & quality assurance'
-    },
-    {
-      name: 'Jordan Lee',
-      role: 'Marketing',
-      contribution: 'Go-to-market strategy & content'
+      name: 'Cydrick V. Amparan',
+      role: 'Business Analyst',
+      contribution: 'Business requirements & analysis'
     }
   ];
 
@@ -54,21 +39,21 @@ export function About() {
       <View className="gap-8">
         {/* Hero Section */}
         <View className="items-center">
-          <View className="w-20 h-20 bg-purple-600 rounded-3xl items-center justify-center mb-4">
-            <Text className="text-4xl">🎉</Text>
+          <View className="w-20 h-20 bg-sky-600 rounded-3xl items-center justify-center mb-4 shadow-md">
+            <Sparkles size={40} color="#ffffff" />
           </View>
-          <Text className="text-3xl font-bold text-gray-900 mb-2">Event Explorer</Text>
+          <Text className="text-3xl font-bold text-gray-900 mb-2">VibeCheck</Text>
           <Text className="text-gray-500">Version 1.0</Text>
         </View>
 
         {/* Mission */}
-        <View className="bg-purple-50 rounded-2xl p-6">
+        <View className="bg-sky-50 rounded-2xl p-6">
           <View className="flex-row items-start gap-3 mb-3">
-            <Target size={24} color="#9333ea" />
+            <Target size={24} color="#0ea5e9" />
             <View className="flex-1">
               <Text className="text-xl font-bold text-gray-900 mb-2">Our Mission</Text>
               <Text className="text-gray-700 leading-6">
-                Event Explorer helps locals discover, explore, and bookmark nearby happenings. We believe every
+                VibeCheck helps locals discover, explore, and bookmark nearby happenings. We believe every
                 community has amazing events worth experiencing, and we're here to make finding them effortless and
                 exciting.
               </Text>
@@ -81,17 +66,26 @@ export function About() {
           <Text className="text-xl font-bold text-gray-900 mb-4">What We Do</Text>
           <View className="gap-3">
             <View className="bg-white rounded-xl p-4 border border-gray-200">
-              <Text className="font-semibold text-gray-900 mb-1">🔍 Discover Events</Text>
+              <View className="flex-row items-center gap-2 mb-1">
+                <Search size={18} color="#0ea5e9" />
+                <Text className="font-semibold text-gray-900">Discover Events</Text>
+              </View>
               <Text className="text-sm text-gray-600">
                 Browse local events with smart search and category filters
               </Text>
             </View>
             <View className="bg-white rounded-xl p-4 border border-gray-200">
-              <Text className="font-semibold text-gray-900 mb-1">🗺️ Visualize Locations</Text>
+              <View className="flex-row items-center gap-2 mb-1">
+                <Map size={18} color="#0ea5e9" />
+                <Text className="font-semibold text-gray-900">Visualize Locations</Text>
+              </View>
               <Text className="text-sm text-gray-600">See events on an interactive map to plan your route</Text>
             </View>
             <View className="bg-white rounded-xl p-4 border border-gray-200">
-              <Text className="font-semibold text-gray-900 mb-1">📌 Save Favorites</Text>
+              <View className="flex-row items-center gap-2 mb-1">
+                <Bookmark size={18} color="#0ea5e9" />
+                <Text className="font-semibold text-gray-900">Save Favorites</Text>
+              </View>
               <Text className="text-sm text-gray-600">Bookmark events you're interested in for quick access</Text>
             </View>
           </View>
@@ -100,19 +94,19 @@ export function About() {
         {/* Team */}
         <View>
           <View className="flex-row items-center gap-2 mb-4">
-            <Users size={24} color="#9333ea" />
-            <Text className="text-xl font-bold text-gray-900">Group 6 Team</Text>
+            <Users size={24} color="#0ea5e9" />
+            <Text className="text-xl font-bold text-gray-900">UniSync Team</Text>
           </View>
           <View className="gap-3">
             {teamMembers.map((member, index) => (
-              <View key={index} className="bg-white rounded-xl p-4 border border-gray-200">
+              <View key={index} className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
                 <View className="flex-row items-start gap-3">
-                  <View className="w-10 h-10 bg-purple-400 rounded-full items-center justify-center">
+                  <View className="w-10 h-10 bg-sky-400 rounded-full items-center justify-center">
                     <Text className="text-white font-bold">{member.name.charAt(0)}</Text>
                   </View>
                   <View className="flex-1">
                     <Text className="font-semibold text-gray-900">{member.name}</Text>
-                    <Text className="text-sm text-purple-600 mb-1">{member.role}</Text>
+                    <Text className="text-sm text-sky-600 mb-1">{member.role}</Text>
                     <Text className="text-sm text-gray-600">{member.contribution}</Text>
                   </View>
                 </View>
@@ -124,13 +118,13 @@ export function About() {
         {/* Future Roadmap */}
         <View>
           <View className="flex-row items-center gap-2 mb-4">
-            <Rocket size={24} color="#9333ea" />
+            <Rocket size={24} color="#0ea5e9" />
             <Text className="text-xl font-bold text-gray-900">Future Roadmap</Text>
           </View>
-          <View className="bg-white rounded-xl p-4 border border-gray-200">
+          <View className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
             {futureFeatures.map((feature, index) => (
               <View key={index} className="flex-row items-start gap-2 mb-2">
-                <Text className="text-purple-600 mt-1">•</Text>
+                <Text className="text-sky-600 mt-1">•</Text>
                 <Text className="text-sm text-gray-700 flex-1">{feature}</Text>
               </View>
             ))}
@@ -138,19 +132,19 @@ export function About() {
         </View>
 
         {/* Contact */}
-        <View className="bg-purple-600 rounded-2xl p-6 mb-8">
+        <View className="bg-sky-600 rounded-2xl p-6 mb-8 shadow-lg">
           <View className="flex-row items-start gap-3">
             <Mail size={24} color="#ffffff" />
             <View className="flex-1">
               <Text className="text-xl font-bold text-white mb-2">Get in Touch</Text>
-              <Text className="text-purple-100 mb-3">
+              <Text className="text-sky-100 mb-3">
                 Have feedback or suggestions? We'd love to hear from you!
               </Text>
               <Pressable
                 onPress={handleContact}
                 className="bg-white px-4 py-2 rounded-lg self-start"
               >
-                <Text className="text-purple-600 font-semibold text-sm">Contact Us</Text>
+                <Text className="text-sky-600 font-semibold text-sm">Contact Us</Text>
               </Pressable>
             </View>
           </View>
