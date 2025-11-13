@@ -1,11 +1,11 @@
+import { Search } from 'lucide-react-native';
 import React from 'react';
 import { TextInput, View } from 'react-native';
-import { Search } from 'lucide-react-native';
 
 export function SearchBar({ value, onChange, placeholder = 'Search events...' }) {
   return (
     <View className="relative">
-      <View className="absolute left-3 top-1/2 z-10">
+      <View className="absolute left-3 top-1/4 z-10">
         <Search size={20} color="#9ca3af" />
       </View>
       <TextInput

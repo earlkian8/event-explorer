@@ -1,76 +1,76 @@
 export const mockEvents = [
   {
     id: '1',
-    title: 'Summer Jazz Festival',
+    title: 'OPM Live Concert',
     date: '2024-06-15',
     time: '7:00 PM',
-    location: 'Central Park Amphitheater',
+    location: 'Araneta Coliseum, Quezon City',
     coordinates: {
-      lat: 40.7829,
-      lng: -73.9654
+      lat: 14.6193,
+      lng: 121.0536
     },
     category: 'Music',
-    description: 'Join us for an evening of smooth jazz under the stars. Featuring local and international artists, food trucks, and a vibrant atmosphere perfect for music lovers.',
+    description: 'Experience the best of Original Pilipino Music featuring top local artists. Join us for an evening of Filipino music under the stars with food stalls and a vibrant atmosphere perfect for music lovers.',
     image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
-    price: '$25'
+    price: '₱500'
   },
   {
     id: '2',
-    title: 'Food Truck Rally',
+    title: 'Food Park Festival',
     date: '2024-06-16',
     time: '12:00 PM',
-    location: 'Riverside Plaza',
+    location: 'BGC, Taguig City',
     coordinates: {
-      lat: 40.7589,
-      lng: -73.9851
+      lat: 14.5547,
+      lng: 121.0244
     },
     category: 'Food',
-    description: "Taste the best street food from over 30 local vendors. From tacos to gourmet burgers, artisan desserts to international cuisine - there's something for everyone!",
+    description: "Taste the best Filipino street food from over 30 local vendors. From sisig to adobo, halo-halo to lechon, and international fusion cuisine - there's something for everyone!",
     image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80',
     price: 'Free entry'
   },
   {
     id: '3',
-    title: 'City Marathon 2024',
+    title: 'Manila Marathon 2024',
     date: '2024-06-17',
-    time: '6:00 AM',
-    location: 'Downtown Start Line',
+    time: '5:00 AM',
+    location: 'Rizal Park, Manila',
     coordinates: {
-      lat: 40.758,
-      lng: -73.9855
+      lat: 14.5832,
+      lng: 120.9795
     },
     category: 'Sports',
-    description: 'Annual city marathon with routes for all skill levels. 5K, 10K, and full marathon options available. Join thousands of runners in this community celebration of fitness.',
+    description: 'Annual Manila marathon with routes for all skill levels. 5K, 10K, and full marathon options available. Join thousands of runners in this community celebration of fitness and Filipino spirit.',
     image: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800&q=80',
-    price: '$45'
+    price: '₱800'
   },
   {
     id: '4',
-    title: 'Street Art Exhibition',
+    title: 'Filipino Art Exhibition',
     date: '2024-06-18',
     time: '10:00 AM',
-    location: 'Arts District Gallery',
+    location: 'National Museum, Manila',
     coordinates: {
-      lat: 40.7614,
-      lng: -73.9776
+      lat: 14.5869,
+      lng: 120.9812
     },
     category: 'Art',
-    description: 'Explore contemporary street art from emerging local artists. Interactive installations, live painting sessions, and artist meet-and-greets throughout the day.',
+    description: 'Explore contemporary Filipino art from emerging local artists. Interactive installations, live painting sessions, and artist meet-and-greets throughout the day showcasing Philippine culture.',
     image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80',
     price: 'Free'
   },
   {
     id: '5',
-    title: 'Tech Startup Meetup',
+    title: 'Tech Startup Summit',
     date: '2024-06-19',
     time: '6:30 PM',
-    location: 'Innovation Hub',
+    location: 'Makati City',
     coordinates: {
-      lat: 40.7489,
-      lng: -73.968
+      lat: 14.5547,
+      lng: 121.0244
     },
     category: 'Tech',
-    description: 'Network with fellow entrepreneurs, hear from successful founders, and discover the latest in tech innovation. Includes pitch sessions and networking happy hour.',
+    description: 'Network with fellow Filipino entrepreneurs, hear from successful founders, and discover the latest in tech innovation. Includes pitch sessions and networking happy hour.',
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
     price: 'Free'
   },
@@ -78,44 +78,44 @@ export const mockEvents = [
     id: '6',
     title: 'Outdoor Yoga Session',
     date: '2024-06-15',
-    time: '8:00 AM',
-    location: 'Lakeside Park',
+    time: '6:00 AM',
+    location: 'Rizal Park, Manila',
     coordinates: {
-      lat: 40.773,
-      lng: -73.9712
+      lat: 14.5832,
+      lng: 120.9795
     },
     category: 'Free',
-    description: 'Start your day with a peaceful yoga session by the lake. All levels welcome. Bring your own mat and enjoy the morning serenity with our community.',
+    description: 'Start your day with a peaceful yoga session at Rizal Park. All levels welcome. Bring your own mat and enjoy the morning serenity with our community.',
     image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
     price: 'Free'
   },
   {
     id: '7',
-    title: 'Live Blues Night',
+    title: 'Acoustic Night',
     date: '2024-06-20',
     time: '9:00 PM',
-    location: 'The Blue Note',
+    location: 'Eastwood City, Quezon City',
     coordinates: {
-      lat: 40.7308,
-      lng: -74.0001
+      lat: 14.6103,
+      lng: 121.0781
     },
     category: 'Music',
-    description: 'Intimate blues performance featuring Grammy-nominated artists. Limited seating, full bar, and an unforgettable night of soulful music.',
+    description: 'Intimate acoustic performance featuring local Filipino artists. Limited seating, full bar, and an unforgettable night of soulful OPM music.',
     image: 'https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=800&q=80',
-    price: '$35'
+    price: '₱300'
   },
   {
     id: '8',
-    title: 'Farmers Market',
+    title: 'Weekend Market',
     date: '2024-06-16',
-    time: '9:00 AM',
-    location: 'Town Square',
+    time: '7:00 AM',
+    location: 'Salcedo Market, Makati',
     coordinates: {
-      lat: 40.7549,
-      lng: -73.984
+      lat: 14.5547,
+      lng: 121.0244
     },
     category: 'Food',
-    description: 'Fresh local produce, artisan breads, handmade crafts, and live music. Support local farmers and makers while enjoying a vibrant community atmosphere.',
+    description: 'Fresh local produce, Filipino delicacies, handmade crafts, and live music. Support local farmers and makers while enjoying a vibrant community atmosphere.',
     image: 'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&q=80',
     price: 'Free entry'
   }

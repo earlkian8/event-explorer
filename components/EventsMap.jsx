@@ -70,10 +70,10 @@ export function EventsMap({ events, onEventClick }) {
         ref={mapRef}
         className="w-full h-full"
         initialRegion={{
-          latitude: 40.7589,
-          longitude: -73.9851,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421
+          latitude: 14.5995,
+          longitude: 120.9842,
+          latitudeDelta: 0.15,
+          longitudeDelta: 0.15
         }}
       >
         {events.map((event) => (
