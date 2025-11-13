@@ -1,23 +1,26 @@
+import { Bookmark, Mail, Rocket, Search, Sparkles, Target, Users } from 'lucide-react-native';
 import React from 'react';
-import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
-import { Bookmark, Mail, Map, Rocket, Search, Sparkles, Target, Users } from 'lucide-react-native';
+import { Image, Linking, Pressable, ScrollView, Text, View } from 'react-native';
 
 export function About() {
   const teamMembers = [
     {
       name: 'Earl Kian A. Bancayrin',
       role: 'Full-Stack Developer Lead',
-      contribution: 'Technical architecture & implementation'
+      contribution: 'Technical architecture & implementation',
+      image: require('../assets/team/earl.png')
     },
     {
       name: 'Jenson L. Canones',
       role: 'Full-Stack Developer',
-      contribution: 'Frontend & backend development'
+      contribution: 'Frontend & backend development',
+      image: require('../assets/team/jenson.png')
     },
     {
       name: 'Cydrick V. Amparan',
       role: 'Business Analyst',
-      contribution: 'Business requirements & analysis'
+      contribution: 'Business requirements & analysis',
+      image: require('../assets/team/cydrick.png')
     }
   ];
 
@@ -31,7 +34,7 @@ export function About() {
   ];
 
   const handleContact = () => {
-    Linking.openURL('mailto:team@eventexplorer.app');
+    Linking.openURL('mailto:earlkian8@gmail.com');
   };
 
   return (
@@ -74,13 +77,13 @@ export function About() {
                 Browse local events with smart search and category filters
               </Text>
             </View>
-            <View className="bg-white rounded-xl p-4 border border-gray-200">
+            {/* <View className="bg-white rounded-xl p-4 border border-gray-200">
               <View className="flex-row items-center gap-2 mb-1">
                 <Map size={18} color="#0ea5e9" />
                 <Text className="font-semibold text-gray-900">Visualize Locations</Text>
               </View>
               <Text className="text-sm text-gray-600">See events on an interactive map to plan your route</Text>
-            </View>
+            </View> */}
             <View className="bg-white rounded-xl p-4 border border-gray-200">
               <View className="flex-row items-center gap-2 mb-1">
                 <Bookmark size={18} color="#0ea5e9" />
@@ -93,21 +96,25 @@ export function About() {
 
         {/* Team */}
         <View>
-          <View className="flex-row items-center gap-2 mb-4">
+          <View className="flex-row items-center gap-2 mb-3">
             <Users size={24} color="#0ea5e9" />
             <Text className="text-xl font-bold text-gray-900">UniSync Team</Text>
           </View>
-          <View className="gap-3">
+          <View className="gap-2.5">
             {teamMembers.map((member, index) => (
-              <View key={index} className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
-                <View className="flex-row items-start gap-3">
-                  <View className="w-10 h-10 bg-sky-400 rounded-full items-center justify-center">
-                    <Text className="text-white font-bold">{member.name.charAt(0)}</Text>
+              <View key={index} className="bg-white rounded-xl p-3.5 border border-gray-200 shadow-sm">
+                <View className="flex-row items-center gap-3">
+                  <View className="w-16 h-16 rounded-full overflow-hidden border-2 border-sky-300 shadow-sm">
+                    <Image 
+                      source={member.image} 
+                      className="w-full h-full"
+                      resizeMode="cover"
+                    />
                   </View>
                   <View className="flex-1">
-                    <Text className="font-semibold text-gray-900">{member.name}</Text>
-                    <Text className="text-sm text-sky-600 mb-1">{member.role}</Text>
-                    <Text className="text-sm text-gray-600">{member.contribution}</Text>
+                    <Text className="text-base font-bold text-gray-900 mb-0.5">{member.name}</Text>
+                    <Text className="text-sm font-semibold text-sky-600 mb-1">{member.role}</Text>
+                    <Text className="text-xs text-gray-600 leading-4">{member.contribution}</Text>
                   </View>
                 </View>
               </View>
